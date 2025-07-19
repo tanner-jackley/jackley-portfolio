@@ -34,9 +34,17 @@ nav,
 }
 
 nav {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
+  width: 60%;
+  z-index: 1000;
+  background-color: rgb(200, 200, 200, 0.75);
+  border-radius: 25rem 25rem 25rem 25rem;
 }
 
 .nav-links {
@@ -64,8 +72,12 @@ a:hover {
   font-weight: 500;
 }
 
-.logo:hover {
-  cursor: default;
+.logo a:hover {
+  color: black;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 /* HAMBURGER MENU */
@@ -97,9 +109,10 @@ a:hover {
 
 .menu-links {
   position: absolute;
-  top: 100%;
+  top: 130%;
   right: 0%;
-  background-color: white;
+  background-color: rgb(53, 53, 53);
+  border-radius: 1rem;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -111,9 +124,13 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 300ms ease-in-out;
+}
+
+.menu-links a:hover {
+  background-color: black;
 }
 
 .menu-links li {
@@ -151,7 +168,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 20vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -172,16 +189,14 @@ section {
 }
 
 .section__pic-container {
-  display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
-  border-radius: 100%;
 }
 
 .section__pic-container img {
-  height: 100%;
-  width: 100%;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -262,4 +277,53 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
 }
