@@ -299,8 +299,6 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 .about-pic {
@@ -326,6 +324,10 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+}
+
+.text-container {
+  font-size: 1.5rem;
 }
 
 /* EXPERIENCE SECTION */
