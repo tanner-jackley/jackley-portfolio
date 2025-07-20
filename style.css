@@ -294,6 +294,8 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .about-containers,
@@ -313,12 +315,13 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 1 1 45%;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  min-width: 250px;
 }
 
 .section-container {
@@ -360,8 +363,10 @@ section {
 
 article {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
