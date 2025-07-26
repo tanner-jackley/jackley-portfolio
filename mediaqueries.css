@@ -15,6 +15,18 @@
   #hamburger-nav {
     display: flex;
   }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__pic-container img {
+    width: 250px;
+    height: 250px;
+    margin: 2rem auto 2rem;
+  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
